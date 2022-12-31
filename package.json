@@ -1,0 +1,26 @@
+{
+  "name": "friday-night-gvbvdxxin-chart-editor",
+  "version": "1.0.0",
+  "description": "Chart Editor For FNG",
+  "main": "main.js",
+  "productName": "Friday Night Gvbvdxxin' Engine Chart Editor",
+  "build": {
+    "appId": "com.fngchart.app"
+  },
+  "scripts": {
+    "test": "electron .",
+	"build": "electron-builder"
+  },
+  "keywords": [
+    "FNF"
+  ],
+  "author": "gvbvdxx/jasonglenevans",
+  "license": "ISC",
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+	"electron-builder": "^23.6.0"
+  }
+}

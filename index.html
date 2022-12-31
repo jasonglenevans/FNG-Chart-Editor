@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+
+<body style="background:black;">
+<canvas id="canvas" style="position:fixed;top:0;left:50%;cursor:url('cursor.png'), auto;"></canvas>
+<dialog id="bpmDialog">
+  <form method="dialog">
+    <p>
+      <label>Change BPM To:
+		<input type="number" min=60 max=350></input>
+      </label>
+    </p>
+    <div>
+      <button id="confirmBtn" value="default">Confirm</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="songName">
+  <form method="dialog">
+    <p>
+      <label>Song Name:
+		<input type="text" min=60 max=350>
+      </label>
+    </p>
+    <div>
+      <button id="confirmBtn" value="default">Confirm</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="eventAdd">
+  <form method="dialog">
+    <p>
+		<h1>Add Event:</h1>
+      <label>Event Type:
+		<input id="eventType" type="text">
+      </label><br>
+	  <label>Value 1:
+		<input id="eventValue1" type="text">
+      </label><br>
+	  <label>Value 2:
+		<input id="eventValue2" type="text">
+      </label>
+    </p>
+    <div>
+      <button id="confirmBtn" value="default">Confirm</button>
+    </div>
+  </form>
+</dialog>
+<script>
+(function () {
+	var aud2 = new Audio("logoloadend.wav");
+	aud2.play();
+})();
+</script>
+<script src="rend.js"></script>
+<script src="src/index.js"></script>
+</body>
+</html>
